@@ -46,7 +46,7 @@ nav .navbar-brand {
   height: 150px;
 }
 .about-me .skills {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .about-me .skills ul li {
   margin-top: 30px;
@@ -72,8 +72,8 @@ nav .navbar-brand {
   img-item-flex: 0 0 33.3%;
 }
 .portfolio-me img {
-  width: 350px;
-  height: 250px;
+  width: 260px;
+  height: 180px;
   margin-bottom: 50px;
 }
 .portfolio-me h2 {
