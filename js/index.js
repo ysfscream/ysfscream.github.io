@@ -9,7 +9,6 @@ $(document).ready(function() {
       $('.active').removeClass('active');
       $(this).addClass('active');
      var $target = $(this.hash);
-        console.log($target.offset().top)
       $('html, body')
       .stop()
       .animate({
