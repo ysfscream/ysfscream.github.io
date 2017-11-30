@@ -18,5 +18,16 @@ $(document).ready(function() {
   });
   var date = new Date();
   var year = date.getFullYear();
+  var hours = date.getHours();
   document.getElementById('time').innerHTML = year;
+  if (hours > 8 && hours < 12) {
+    document.getElementById('hours').innerHTML = "Good morning, Sir 🌞";
+  } else if (hours > 12 && hours < 19) {
+    document.getElementById('hours').innerHTML = "Good afternoon, Sir 🌞 ";
+  } else if (hours >= 19 && hours < 23) {
+     document.getElementById('hours').innerHTML = "Good night, Sir 🌛";
+  } else {
+    document.getElementById('hours').innerHTML = "😴 (～﹃～)~zZ";
+  }
+
 })
