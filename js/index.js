@@ -29,5 +29,4 @@ $(document).ready(function() {
   } else {
     document.getElementById('hours').innerHTML = "😴 (～﹃～)~zZ";
   }
-
 })
