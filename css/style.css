@@ -134,14 +134,6 @@ nav .navbar-brand {
     margin: 20px 0 50px 0;
 }
 
-.portfolio-me .portfolio-img {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    img-item-flex: 0 0 33.3%;
-}
-
 .portfolio-me .portfolio-item {
     width: 100%;
     height: auto;
