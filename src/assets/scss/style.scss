@@ -1,0 +1,30 @@
+html body {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  text-align: center;
+  .head-img {
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+.body-link {
+  padding: 0 150px;
+}
+
+span {
+  color: #e39;
+  font-size: 2rem;
+}
