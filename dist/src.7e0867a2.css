@@ -1,5 +1,5 @@
 html body {
-  margin: 20px 0 0 0;
+  margin: 60px 0;
   padding: 0;
   font-family: 'Gloria Hallelujah', sans-serif;
   font-size: 16px; }
@@ -7,16 +7,64 @@ html body {
 img {
   max-width: 100%; }
 
+a {
+  text-decoration: none; }
+
+h1 {
+  color: #f791c9;
+  font-size: 1.6rem; }
+
 header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
   header .head-img img {
     border-radius: 50%;
     width: 150px;
     height: 150px; }
 
-.body-link {
-  padding: 0 150px; }
+div.body {
+  margin: 0 auto; }
+  div.body .body-content {
+    text-align: center;
+    margin-bottom: 40px; }
+    div.body .body-content .blog:hover {
+      text-decoration: line-through; }
+    div.body .body-content .tooltip {
+      font-size: 1rem; }
+  div.body .body-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    div.body .body-link .wired-button {
+      width: 100px; }
+      div.body .body-link .wired-button:hover i {
+        font-size: 1.6rem;
+        -webkit-transition: .3s;
+        -webkit-transition: .3s;
+        transition: .3s; }
+    div.body .body-link i {
+      font-size: 1.2rem; }
+    div.body .body-link .twitter {
+      color: #53a8ff; }
+    div.body .body-link .github {
+      color: #303133; }
+    div.body .body-link .codepen {
+      color: #000; }
+    div.body .body-link .weibo {
+      color: red; }
 
-span {
-  color: #e39;
-  font-size: 2rem; }
+@media (min-width: 996px) {
+  div.body {
+    width: 700px; } }
+
+@media (max-width: 768px) {
+  div.body .body-link {
+    padding: 0 40px; }
+    div.body .body-link .wired-button {
+      width: 100%;
+      margin-bottom: 20px; } }

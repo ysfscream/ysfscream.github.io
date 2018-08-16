@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>YSF Portfolio</title>
-  <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="assets/images/ysfscream.png" />
+  <link rel="shortcut icon" type="image/png" href="../static/ysfscream.png" />
 </head>
 <body>
   <header>
@@ -14,10 +14,43 @@
       <img src="./assets/images/yushifan.jpeg" alt="">
     </div>
   </header>
-  <div class="body-link">
-    <wired-button>Click Me</wired-button>
+  <div class="body">
+    <div class="body-content">
+      <h1>I am Ysfscream <em><a class="blog" href="https://github.com/ysfscream/ysfscream.github.io/issues" id="blog" target="_blank">
+        <span>[Blog]</span>
+      </a></em>
+      </h1>
+      <wired-tooltip class="tooltip" position="top" for="blog" text="Oh! yeeee~ It's my blog, click here!!"></wired-tooltip>
+      <span>(Yu Shifan)</span>
+    </div>
+    <div class="body-link">
+      <wired-button class="wired-button">
+        <a class="github" href="https://github.com/ysfscream" target="_blank">
+          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+          Github
+        </a>
+      </wired-button>
+      <wired-button class="wired-button">
+        <a class="twitter" href="https://twitter.com/biantoumy" target="_blank">
+          <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+          Twitter
+        </a>
+      </wired-button>
+      <wired-button class="wired-button">
+        <a class="codepen"  href="https://codepen.io/yushifan/" target="_blank">
+          <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+          codepen
+        </a>
+      </wired-button>
+      <wired-button class="wired-button">
+        <a class="weibo"  href="http://weibo.com/u/2061568263?refer_flag=1001030102_" target="_blank">
+          <i class="fa fa-weibo fa-3x" aria-hidden="true"></i>
+          weibo
+        </a>
+      </wired-button>
+      </wired-button>
+    </div>
   </div>
 </body>
-  <!-- <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script> -->
   <script  src="./index.js"></script>
 </html>

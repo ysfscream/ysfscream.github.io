@@ -1,4 +1,3 @@
 import './assets/scss/style.scss'
 
-import { WiredButton, WiredCard } from "wired-elements"
-
+import { WiredButton, WiredCard, WiredTooltip } from "wired-elements"
