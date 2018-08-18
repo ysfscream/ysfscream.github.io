@@ -5,3 +5,11 @@
 ## See [issues](https://github.com/ysfscream/ysfscream.github.io/issues)
 
 详情 看 issues 🦄
+
+```js
+yarn
+
+yarn dev
+
+yarn build
+```
