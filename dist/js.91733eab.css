@@ -9,15 +9,19 @@ html {
     font-family: 'Gloria Hallelujah', sans-serif;
     font-size: 16px; }
 
+h1 {
+  color: #f791c9;
+  font-size: 1.6rem; }
+
 img {
   max-width: 100%; }
 
 a {
   text-decoration: none; }
 
-h1 {
-  color: #f791c9;
-  font-size: 1.6rem; }
+#json {
+  font-family: monospace;
+  line-height: 2; }
 
 header {
   text-align: center;
@@ -78,8 +82,15 @@ div.body {
       color: #000; }
     div.body .body-link .weibo {
       color: red; }
-  div.body .body-intro .wired-card {
-    padding: 40px; }
+  div.body .body-intro {
+    margin-top: 40px;
+    text-align: center; }
+    div.body .body-intro .wired-card {
+      text-align: left;
+      padding: 20px 60px; }
+      div.body .body-intro .wired-card .intro-title {
+        border-bottom: 1px solid;
+        padding-bottom: 10px; }
 
 @media (min-width: 768px) {
   div.body {
@@ -90,7 +101,12 @@ div.body {
     padding: 0 40px; }
     div.body .body-link .wired-button {
       width: 100%;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  div.body .body-intro {
+    margin: 20px 10px; }
+    div.body .body-intro .wired-card {
+      text-align: left;
+      padding: 20px; } }
 
 @-webkit-keyframes blogAnimation() {
   from-font-size: 3rem;

@@ -7361,20 +7361,42 @@ Object.defineProperty(exports, 'WiredTooltip', {
     return _wiredTooltip.WiredTooltip;
   }
 });
-},{"wired-button/wired-button.js":"../node_modules/wired-button/wired-button.js","wired-card/wired-card.js":"../node_modules/wired-card/wired-card.js","wired-checkbox/wired-checkbox.js":"../node_modules/wired-checkbox/wired-checkbox.js","wired-combo/wired-combo.js":"../node_modules/wired-combo/wired-combo.js","wired-icon-button/wired-icon-button.js":"../node_modules/wired-icon-button/wired-icon-button.js","wired-input/wired-input.js":"../node_modules/wired-input/wired-input.js","wired-item/wired-item.js":"../node_modules/wired-item/wired-item.js","wired-listbox/wired-listbox.js":"../node_modules/wired-listbox/wired-listbox.js","wired-progress/wired-progress.js":"../node_modules/wired-progress/wired-progress.js","wired-radio/wired-radio.js":"../node_modules/wired-radio/wired-radio.js","wired-radio-group/wired-radio-group.js":"../node_modules/wired-radio-group/wired-radio-group.js","wired-slider/wired-slider.js":"../node_modules/wired-slider/wired-slider.js","wired-textarea/wired-textarea.js":"../node_modules/wired-textarea/wired-textarea.js","wired-toggle/wired-toggle.js":"../node_modules/wired-toggle/wired-toggle.js","wired-tooltip/wired-tooltip.js":"../node_modules/wired-tooltip/wired-tooltip.js"}],"index.js":[function(require,module,exports) {
+},{"wired-button/wired-button.js":"../node_modules/wired-button/wired-button.js","wired-card/wired-card.js":"../node_modules/wired-card/wired-card.js","wired-checkbox/wired-checkbox.js":"../node_modules/wired-checkbox/wired-checkbox.js","wired-combo/wired-combo.js":"../node_modules/wired-combo/wired-combo.js","wired-icon-button/wired-icon-button.js":"../node_modules/wired-icon-button/wired-icon-button.js","wired-input/wired-input.js":"../node_modules/wired-input/wired-input.js","wired-item/wired-item.js":"../node_modules/wired-item/wired-item.js","wired-listbox/wired-listbox.js":"../node_modules/wired-listbox/wired-listbox.js","wired-progress/wired-progress.js":"../node_modules/wired-progress/wired-progress.js","wired-radio/wired-radio.js":"../node_modules/wired-radio/wired-radio.js","wired-radio-group/wired-radio-group.js":"../node_modules/wired-radio-group/wired-radio-group.js","wired-slider/wired-slider.js":"../node_modules/wired-slider/wired-slider.js","wired-textarea/wired-textarea.js":"../node_modules/wired-textarea/wired-textarea.js","wired-toggle/wired-toggle.js":"../node_modules/wired-toggle/wired-toggle.js","wired-tooltip/wired-tooltip.js":"../node_modules/wired-tooltip/wired-tooltip.js"}],"js/intro.js":[function(require,module,exports) {
 'use strict';
 
-require('./assets/scss/style.scss');
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var intro = function intro() {
+  var myIntro = {
+    Name: 'Yu Shifan',
+    'Phone / weChat': '18669086712',
+    Education: 'Dalian Neusoft University of Information',
+    Employment: 'EMQ (emqx.io) in Hangzhou',
+    Apply: 'FE / Full Stack',
+    Skills: ['HTML(5)', 'CSS(3)', 'Javascript(ES6+)', 'Vue(Buckets)', 'React(Buckets)', 'Nodejs(Koa, express)', 'Python(3, flask)', 'MongoDB(mongoose)', 'PostgresSQL(...)', 'Docker']
+  };
+  return JSON.stringify(myIntro, null, 2);
+};
+
+exports.default = intro;
+},{}],"js/index.js":[function(require,module,exports) {
+'use strict';
+
+require('../assets/scss/style.scss');
 
 var _wiredElements = require('wired-elements');
 
-var myIntro = {
-  name: 'Yu Shifan',
-  'Phone/weChat': '18669086712'
-};
-var intro = document.querySelector('.wired-card');
-console.log(JSON.stringify(myIntro));
-},{"./assets/scss/style.scss":"assets/scss/style.scss","wired-elements":"../node_modules/wired-elements/wired-elements.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var _intro = require('./intro.js');
+
+var _intro2 = _interopRequireDefault(_intro);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var introCardText = document.querySelector('#json');
+var screenWidth = document.body.clientWidth;
+screenWidth > 768 ? introCardText.innerHTML = '<pre>' + (0, _intro2.default)() + '</pre>' : introCardText.innerHTML = (0, _intro2.default)();
+},{"../assets/scss/style.scss":"assets/scss/style.scss","wired-elements":"../node_modules/wired-elements/wired-elements.js","./intro.js":"js/intro.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -7403,7 +7425,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49943' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55681' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -7544,5 +7566,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.7e0867a2.map
+},{}]},{},["../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.91733eab.map

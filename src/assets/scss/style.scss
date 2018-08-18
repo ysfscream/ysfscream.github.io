@@ -1,27 +1,30 @@
-$twitter: #53a8ff;
-$github: #303133;
-$codepen: #000;
-$weibo: red;
-
-html body {
-  margin: 60px 0;
-  padding: 0;
-  font-family: 'Gloria Hallelujah', sans-serif;
-  font-size: 16px;
+@import './colors.scss';
+html {
+  height: 100%;
+  width: 100%;
+  background: #fefefe;
+  body {
+    margin: 60px 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-size: 16px;
+  }
 }
-
+h1 {
+  color: $title;
+  font-size: 1.6rem;
+}
 img {
   max-width: 100%;
 }
-
 a {
   text-decoration: none;
 }
-
-h1 {
-  color: #f791c9;
-  font-size: 1.6rem;
+#json {
+  font-family: monospace;
+  line-height: 2
 }
+
 header {
   text-align: center;
   margin-bottom: 40px;
@@ -40,12 +43,27 @@ div.body {
     text-align: center;
     margin-bottom: 40px;
     .blog {
+      -webkit-animation: blogAnimation 2s;
+              animation: blogAnimation 2s;
       &:hover {
         text-decoration: line-through;
       }
     }
     .tooltip {
       font-size: 1rem;
+      top: 220px !important;
+    }
+    .name {
+      display: inline-block;
+      width: 17ch;
+      color: $nomralWord;
+      font-family: 'Gloria Hallelujah', sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 500;
+      border-right: 1px solid transparent;
+      -webkit-animation: typing 4s steps(17), caret .5s steps(1) 17;
+              animation: typing 4s steps(17), caret .5s steps(1) 17;
     }
   }
   .body-link {
@@ -58,6 +76,7 @@ div.body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     .wired-button {
+      background: #fff;
       width: 100px;
       &:hover {
         i {
@@ -84,9 +103,21 @@ div.body {
       color: $weibo;
     }
   }
+  .body-intro {
+    margin-top: 40px;
+    text-align: center;
+    .wired-card {
+      text-align: left;
+      padding: 20px 60px;
+      .intro-title {
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+      }
+    }
+  }
 }
 
-@media (min-width: 996px) {
+@media (min-width: 768px) {
   div.body {
     width: 700px;
   }
@@ -100,5 +131,60 @@ div.body {
         margin-bottom: 20px;
       }
     }
+    .body-intro {
+      margin: 20px 10px;
+      .wired-card {
+        text-align: left;
+        padding: 20px;
+      }
+    }
   }
+}
+
+@-webkit-keyframes blogAnimation() {
+  from: {
+    font-size: 3rem;
+  }
+  to: {
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes blogAnimation {
+  from {
+    font-size: 3rem;
+  }
+  to {
+    font-size: 1rem;
+  }
+}
+
+@keyframes blogAnimation {
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 1.6rem;
+  }
+}
+
+@-webkit-keyframes typing{
+  from {
+    width: 0;
+  }
+  to {
+    font: 100% Consolas, Monaco, monospace;   /*等宽字体*/
+  }
+}
+
+@keyframes typing{
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes caret{
+  50% { border-right-color: currentColor}
+}
+@keyframes caret{
+  50% { border-right-color: currentColor}
 }
