@@ -2,9 +2,9 @@
 html {
   height: 100%;
   width: 100%;
-  background: #fefefe;
+  background: $background;
   body {
-    margin: 60px 0;
+    margin: 60px 0 0 0;
     padding: 0;
     font-family: 'Gloria Hallelujah', sans-serif;
     font-size: 16px;
@@ -104,7 +104,7 @@ div.body {
     }
   }
   .body-intro {
-    margin-top: 40px;
+    margin: 40px 0 60px 0;
     text-align: center;
     .wired-card {
       text-align: left;
@@ -115,6 +115,24 @@ div.body {
       }
     }
   }
+  .body-time {
+    padding: 0 20px;
+    margin: 40px 0;
+    .wired-progress {
+      width: 100%;
+    }
+  }
+  .body-email {
+    padding: 0 20px;
+    .wired-card {
+      padding: 20px;
+    }
+  }
+}
+div.footer {
+  width: 100%;
+  margin: 60px 0 40px 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -2,6 +2,7 @@ const intro = () => {
   const myIntro = {
     Name: 'Yu Shifan',
     'Phone / weChat': '18669086712',
+    Email: '894402575bt@gmail.com',
     Education: 'Dalian Neusoft University of Information',
     Employment: 'EMQ (emqx.io) in Hangzhou',
     Apply: 'FE / Full Stack',
