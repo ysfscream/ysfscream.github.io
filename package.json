@@ -21,6 +21,6 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "cssnano": "^4.0.5"
+    "cssnano": "^4.1.0"
   }
 }
