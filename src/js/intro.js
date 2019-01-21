@@ -1,7 +1,7 @@
 const intro = () => {
   const myIntro = {
-    Name: 'Yu Shifan',
-    'Phone / weChat': '18669086712',
+    Name: 'Yu Shifan（余仕帆）',
+    'Phone / WeChat': '18669086712',
     Email: '894402575bt@gmail.com',
     Education: 'Dalian Neusoft University of Information',
     Employment: 'EMQ (emqx.io) in Hangzhou',
@@ -10,13 +10,16 @@ const intro = () => {
       'HTML(5)',
       'CSS(3)',
       'Javascript(ES6+)',
-      'Vue(Buckets)',
+      'Vue',
       'React',
       'Nodejs(Koa, express)',
-      'webpack',
       'Python(3, flask)',
+      'Webpack / Parcel',
+      'D3.js / Echarts',
       'MongoDB(mongoose)',
       'PostgresSQL(...)',
+      'Git',
+      'Vim / VsCode',
       'Docker'
     ]
   }
