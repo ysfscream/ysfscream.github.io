@@ -1,11 +1,12 @@
 {
   "name": "ysfscream.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Yushifan's Home page",
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./src/index.html -p 3000",
     "build": "parcel build ./src/index.html",
+    "deploy": "yarn build && gh-pages -d dist -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "cssnano": "^4.1.0"
+    "cssnano": "^4.1.0",
+    "gh-pages": "^2.0.1"
   }
 }

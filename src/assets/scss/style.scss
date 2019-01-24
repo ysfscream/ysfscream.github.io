@@ -45,9 +45,6 @@ div.body {
     .blog {
       -webkit-animation: blogAnimation 2s;
               animation: blogAnimation 2s;
-      &:hover {
-        text-decoration: line-through;
-      }
     }
     .tooltip {
       font-size: 1rem;
