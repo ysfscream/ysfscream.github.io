@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html -p 3000",
     "build": "parcel build ./src/index.html",
-    "deploy": "yarn build && gh-pages -d dist -b master",
+    "deploy": "gh-pages -d dist -b master -m :rocket:Deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
