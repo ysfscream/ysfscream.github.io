@@ -11,6 +11,6 @@ echo 'ysfscream.xyz' > CNAME
 
 cd ..
 
-echo '👍 Created! CNAMA'
+echo '👍 Created! CNAME'
 
 yarn deploy

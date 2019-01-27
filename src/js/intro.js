@@ -9,15 +9,15 @@ const intro = () => {
     Skills: [
       'HTML(5)',
       'CSS(3)',
-      'Javascript(ES6+)',
+      'Javascript(ES6+, TS)',
       'Vue',
       'React',
       'Nodejs(Koa, express)',
-      'Python(3, flask)',
       'Webpack / Parcel',
       'D3.js / Echarts',
+      'Python(3, flask)',
       'MongoDB(mongoose)',
-      'PostgresSQL(...)',
+      'PostgresSQL',
       'Git',
       'Vim / VsCode',
       'Docker'
