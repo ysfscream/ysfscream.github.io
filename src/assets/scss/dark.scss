@@ -1,0 +1,50 @@
+.darkmode--activated {
+  --wired-progress-color: #ffa7c4;
+  --wired-progress-label-color: rgb(24, 23, 23);
+  a {
+    color: #53a8ff;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .darkmode-layer {
+    background: transparent;
+  }
+  .darkmode-background {
+    background: #282c35;
+  }
+
+  .wired-button,
+  .wired-card,
+  .wired-progress {
+    color: #fff;
+  }
+
+  div.body .body-link {
+    .wired-button {
+      background: #333844
+    }
+    .github, .codepen {
+      color: #fff;
+    }
+    .weibo {
+      color: #FE2A72;
+    }
+  }
+
+  .wired-card {
+    background: #333844;
+  }
+
+  div.body .body-content .name {
+    color: #fff;
+  }
+  
+  .body-time {
+    #timeTitle {
+      color: #fff;
+    }
+  }
+}

@@ -1045,6 +1045,11 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+darkmode-js@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/darkmode-js/-/darkmode-js-1.4.0.tgz#fee31a2a57bbfc698c580b01735241b0f931ac44"
+  integrity sha512-j0Dz1QJ0DJn3yrCy/dZGXzIbjMilnGquwQilHyQOlvmN+g5+aBpkikIkh1CWZDi6Vq+ZXmzVa/BI64P9XritWQ==
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
