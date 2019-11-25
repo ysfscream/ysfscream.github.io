@@ -1,10 +1,12 @@
 # ysfscrem's Home page
 
-> I used GitHub's issues to record my blogs
+## Links
 
-详情 看 [issues](https://github.com/ysfscream/ysfscream.github.io/issues) 🦄
+详情看 [issues](https://github.com/ysfscream/ysfscream.github.io/issues) 🦄
 
 笔记看 [about-notes](https://ysfscream.xyz/about-notes) 📝
+
+## Develop
 
 ```shell
 yarn
