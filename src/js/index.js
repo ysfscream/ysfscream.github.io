@@ -5,13 +5,15 @@ import { WiredButton, WiredIconButton, WiredCard, WiredTooltip, WiredProgress } 
 import intro from './intro.js'
 import Time from './time.js'
 
-
 // Dark mode
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true
 const options = {
   label: '🌓',
-  autoMatchOsTheme: true,
 }
 const darkmode = new Darkmode(options)
+if (isDarkMode) {
+  darkmode.toggle()
+}
 darkmode.showWidget()
 
 // JSON resume
