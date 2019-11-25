@@ -13,7 +13,7 @@ const intro = () => {
       'TypeScript',
       'Vue',
       'React',
-      'Nodejs(Koa, express)',
+      'Nodejs(Koa, Express)',
       'Webpack / Parcel',
       'Echarts / D3.js',
       'Python(3, flask)',
